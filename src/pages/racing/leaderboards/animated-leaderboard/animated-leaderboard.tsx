@@ -74,9 +74,8 @@ const AnimatedLeaderboard = ({
       const databaseStringToRetrieve = `${gameDifficulty}${numberOfQuestions}`;
       const databaseString = `${acceptedScoreboardDatabaseNames[databaseStringToRetrieve]}`;
       const retrievedData = await leaderBoardAPICaller(databaseString);
-      console.log(retrievedData);
+
       if (retrievedData !== undefined) {
-        console.log(100);
         setRetrievedLeaderBoardData(retrievedData.retrievedData);
       }
     } else {
@@ -116,13 +115,11 @@ const AnimatedLeaderboard = ({
   useEffect(() => {
     if (retrievedLeaderBoardData.length !== 0) {
       const usersNewRanking = calculateUsersRanking();
-      console.log(140);
 
       if (usersNewRanking !== -1 && usersNewRanking <= 10) {
         const copyOfRetrievedLeaderBoardData = JSON.parse(
           JSON.stringify(retrievedLeaderBoardData)
         );
-        console.log(copyOfRetrievedLeaderBoardData);
 
         copyOfRetrievedLeaderBoardData[usersNewRanking - 1] = {
           username: submittedUsername,
@@ -131,7 +128,6 @@ const AnimatedLeaderboard = ({
           ),
           ranking: usersNewRanking,
         };
-        console.log(usersNewRanking);
 
         setUsersNewRanking(usersNewRanking);
 

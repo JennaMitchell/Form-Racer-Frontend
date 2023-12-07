@@ -63,7 +63,6 @@ export const updateMongoDBScoreboardEntry = async (
       );
 
       const jsonedResponse = await fetchedResponse.json();
-      console.log(jsonedResponse);
 
       return jsonedResponse;
     }

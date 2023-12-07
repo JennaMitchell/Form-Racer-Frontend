@@ -21,8 +21,6 @@ const AnimatedBoard = ({
   newLeaderboardData,
   newUserRanking,
 }: AnimatedBoardPropTypes): JSX.Element => {
-  console.log(newLeaderboardData);
-  console.log(previousLeaderboardData);
   const [firstHalfOfLeaderboard, setFirstHalfOfLeaderboard] = useState<
     LeaderboardRetrievedDataType[]
   >([]);

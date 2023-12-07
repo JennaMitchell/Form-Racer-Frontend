@@ -144,9 +144,6 @@ const FormGeneratorMainPage = (): JSX.Element => {
         database: string,
         numberOfQuestions: number
       ) => {
-        /// 1
-        console.log(database);
-        console.log(numberOfQuestions);
         const retrievedData = await getMongoDBQuestionDataWithLimit(
           `${database}-${numberOfQuestions}`
         );
@@ -170,7 +167,6 @@ const FormGeneratorMainPage = (): JSX.Element => {
 
           switch (questionType) {
             case "multiple choice":
-              console.log(arrayOfQuestionNumbers[indexOfArrayQuestionNumbers]);
               const retrievedData = await getQuestionDataWithLimit(
                 acceptedMongoDBAPICallObject.multipleChoice.databaseName,
                 arrayOfQuestionNumbers[indexOfArrayQuestionNumbers]

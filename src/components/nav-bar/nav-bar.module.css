@@ -1,0 +1,141 @@
+/* .navBarContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: max(500px, 500px);
+  height: max(100px, 100px);
+
+  z-index: 2;
+}
+.navBarContainer:hover {
+  background-color: orange;
+} */
+.navBarButton {
+  background-color: var(--main800);
+  color: var(--black);
+  position: fixed;
+  width: max-content;
+  max-width: max-content;
+  max-height: max-content;
+  padding: 10px 20px;
+
+  font-size: var(--r22);
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.navBarButtonLeft {
+  top: 20px;
+  right: 300px;
+  z-index: 13;
+  transform: scale(50%);
+}
+
+.settingBarButtonLeft {
+  top: 20px;
+  right: 190px;
+  z-index: 13;
+  transform: scale(50%);
+}
+
+.startButtonLeft {
+  top: 20px;
+  right: 230px;
+  z-index: 13;
+  transform: scale(50%);
+}
+.navBarButtonCenter {
+  top: 20px;
+  right: 130px;
+  z-index: 14;
+  box-shadow: 0px 0px 10px white;
+}
+
+.navBarButtonRight {
+  top: 20px;
+  right: 20px;
+  z-index: 13;
+  transform: scale(50%);
+}
+.navBarButton:hover {
+  background-color: var(--main200);
+  cursor: pointer;
+}
+@media (max-width: 950px) {
+  .navBarButton {
+    font-size: var(--r12);
+  }
+  .navBarButtonLeft {
+    right: 155px;
+    transform: scale(50%);
+  }
+  .startButtonLeft {
+    right: 120px;
+    transform: scale(50%);
+  }
+  .navBarButtonCenter {
+    right: 75px;
+    box-shadow: 0px 0px 10px white;
+  }
+
+  .navBarButtonRight {
+    right: 30px;
+    transform: scale(50%);
+  }
+  .settingBarButtonLeft {
+    right: 95px;
+    transform: scale(50%);
+  }
+}
+@media (max-width: 650px) {
+  .navBarButton {
+    font-size: var(--r12);
+  }
+  .navBarButtonLeft {
+    right: 125px;
+    transform: scale(50%);
+  }
+  .startButtonLeft {
+    right: 90px;
+    transform: scale(50%);
+  }
+  .navBarButtonCenter {
+    right: 45px;
+    box-shadow: 0px 0px 10px white;
+  }
+
+  .navBarButtonRight {
+    right: 0px;
+    transform: scale(50%);
+  }
+  .settingBarButtonLeft {
+    right: 65px;
+    transform: scale(50%);
+  }
+}
+@media (max-width: 480px) {
+  .navBarButton {
+    font-size: var(--r10);
+  }
+  .navBarButtonLeft {
+    right: 115px;
+    transform: scale(50%);
+  }
+  .startButtonLeft {
+    right: 9s0px;
+    transform: scale(50%);
+  }
+  .navBarButtonCenter {
+    right: 45px;
+    box-shadow: 0px 0px 10px white;
+  }
+
+  .navBarButtonRight {
+    right: 0px;
+    transform: scale(50%);
+  }
+  .settingBarButtonLeft {
+    right: 70px;
+    transform: scale(50%);
+  }
+}

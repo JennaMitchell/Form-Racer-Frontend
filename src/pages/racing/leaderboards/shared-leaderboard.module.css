@@ -1,0 +1,51 @@
+.leaderboardTopContainer {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  animation: fadeIn 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+.leaderboardContents {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  height: max-content;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+.leaderboardTitle {
+  font-size: var(--r32);
+  line-height: var(--r48);
+  width: max-content;
+  max-width: max-content;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.leaderboardContents > p {
+  font-size: var(--r22);
+  line-height: var(--r22);
+  width: max-content;
+  max-width: max-content;
+  color: white;
+  font-weight: bold;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

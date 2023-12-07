@@ -1,0 +1,46 @@
+.changeWeaponWindow {
+  width: max(60%, 60%);
+  height: max(150px, 150px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  border: 1px solid var(--white);
+}
+.changeWeaponRightArrow,
+.changeWeaponLeftArrow {
+  width: max(20px, 20px);
+  height: max(20px, 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s, color 0.5s;
+  background-color: var(--black);
+  color: var(--main800);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.changeWeaponRightArrow:hover,
+.changeWeaponLeftArrow:hover {
+  background-color: var(--main100);
+  color: var(--black);
+}
+.changeWeaponRightArrow {
+  right: -30px;
+  padding: 3px 2.5px 3px 3px;
+}
+.changeWeaponLeftArrow {
+  left: -30px;
+  padding: 3px 3px 3px 2.5px;
+}
+.arrowIcon {
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+  color: inherit;
+}

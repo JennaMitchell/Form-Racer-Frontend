@@ -1,0 +1,25 @@
+.animatedLeaderboardTopContainer {
+  width: max-content;
+  max-width: max-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  animation: fadeIn 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

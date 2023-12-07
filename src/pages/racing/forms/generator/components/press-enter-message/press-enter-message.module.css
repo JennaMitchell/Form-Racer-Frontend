@@ -1,0 +1,15 @@
+.pressEnterMessage {
+  color: rgb(59, 249, 59);
+  font-size: var(--r12);
+  line-height: var(--r12);
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.pressEnterMessageDark {
+  color: rgb(0, 173, 0);
+}

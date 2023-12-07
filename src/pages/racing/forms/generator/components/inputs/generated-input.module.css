@@ -1,0 +1,97 @@
+.generatedInputContainer {
+  width: max(100%, 100%);
+  height: max-content;
+  max-height: max-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-size: inherit;
+  padding: 7.5px 0px;
+}
+.inputLabel {
+  left: -5px;
+  top: -3.5px;
+  font-size: var(--r12);
+  position: absolute;
+  transition: all 0.5s;
+  padding: 1.5px;
+  background-color: var(--black);
+  color: var(--white);
+}
+.labelMovedOut {
+  font-size: var(--r10);
+  left: 5px;
+  top: -7.5px;
+  transform: translateY(0%);
+  background-color: var(--main800);
+}
+
+.generatedLabel {
+  max-width: max-content;
+  max-height: max-content;
+  box-sizing: border-box;
+  padding: 1px 2.5px;
+
+  color: var(--black);
+  position: absolute;
+
+  transition: all 0.5s;
+}
+.generatedInput {
+  width: max(100%, 100%);
+  height: max-content;
+  max-height: max-content;
+  font-size: inherit;
+
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+.generatedInput:focus {
+  outline: solid;
+  outline-color: var(--main100);
+}
+
+.generatedInputQuestion {
+  font-family: var(--mainFamilyFont);
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--white);
+
+  width: max(100%, 100%);
+  max-height: max-content;
+  max-height: max-content;
+  z-index: 1000;
+}
+.triggerAnimation {
+  top: calc(100vh - 400px);
+}
+.hideQuestion {
+  opacity: 0;
+}
+.astroidDestroyTrigger {
+  z-index: 1000;
+}
+@media (max-width: 950px) {
+  .inputLabel {
+    left: -5px;
+    top: -5px;
+    font-size: var(--r10);
+  }
+}
+@media (max-width: 650px) {
+  .inputLabel {
+    left: -5px;
+    top: -3.5px;
+    font-size: var(--r8);
+  }
+}
+@media (max-width: 480px) {
+  .inputLabel {
+    left: -5px;
+    top: -3.5px;
+    font-size: var(--r6);
+  }
+}

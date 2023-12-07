@@ -1,0 +1,33 @@
+.gameOverScreenTopContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.gameOverTitle {
+  font-size: var(--r32);
+  line-height: var(--r32);
+  color: var(--main800);
+  font-weight: bold;
+  width: max-content;
+}
+.newGameButton {
+  width: max-content;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 10px white;
+  border-radius: 5px;
+  background-color: var(--main800);
+  color: black;
+  transition: background-color 0.5s;
+}
+.newGameButton:hover {
+  background-color: var(--main100);
+  box-shadow: 0px 0px 10px black;
+  cursor: pointer;
+}

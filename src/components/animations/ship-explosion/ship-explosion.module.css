@@ -1,0 +1,39 @@
+.shipExplosionMainContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.shipPhoto {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+  transition: opacity 0.25s;
+  object-fit: cover;
+  opacity: 1;
+}
+.shipImagePhasingOut {
+  opacity: 0;
+}
+.shipImagePhasedOut {
+  visibility: hidden;
+}
+#shipPhaseOne {
+  z-index: 4;
+}
+#shipPhaseTwo {
+  z-index: 3;
+}
+#shipPhaseThree {
+  z-index: 2;
+}
+#shipPhaseFour {
+  z-index: 1;
+}

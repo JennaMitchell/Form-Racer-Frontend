@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  --main100: #fffae5;
+  --main200: #fff6cc;
+  --main300: #fff2b2;
+  --main400: #ffee99;
+  --main500: #ffe97f;
+  --main600: #ffe566;
+  --main700: #ffe14c;
+  --main800: #ffdd32;
+  --main900: #ffd819;
+  --main1000: #ffd400;
+
+  --grey100: #f8f9fa;
+  --grey200: #e9ecef;
+  --grey300: #dee2e6;
+  --grey400: #ced4da;
+  --grey500: #adb5bd;
+  --grey600: #6c757d;
+  --grey700: #495057;
+  --grey800: #343a40;
+  --grey900: #212529;
+
+  --black: black;
+  --white: white;
+  --errorTextColoe: red;
+  --mainFontFamily: "Press Start 2P", cursive;
+  --pixelToRem: calc((1 / 16) * 1rem);
+
+  --r6: calc(6 * var(--pixelToRem));
+  --r8: calc(8 * var(--pixelToRem));
+
+  --r10: calc(10 * var(--pixelToRem));
+  --r12: calc(12 * var(--pixelToRem));
+  --r16: calc(16 * var(--pixelToRem));
+  --r18: calc(18 * var(--pixelToRem));
+  --r20: calc(20 * var(--pixelToRem));
+  --r22: calc(22 * var(--pixelToRem));
+  --r24: calc(24 * var(--pixelToRem));
+  --r26: calc(26 * var(--pixelToRem));
+  --r28: calc(28 * var(--pixelToRem));
+  --r32: calc(32 * var(--pixelToRem));
+  --r64: calc(64 * var(--pixelToRem));
+
+  --popupBackdropZIndex: 12;
+  --popupServeMessageZIndex: 13;
+
+  --inactiveButtonBackgroundColor: rgba(128, 128, 128, 0.57);
+  --inactiveButtonFontColor: grey;
+}
+div {
+  box-sizing: border-box;
+}
+button {
+  box-sizing: border-box;
+  border: none;
+}
+p,
+button,
+h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+label,
+input {
+  font-family: var(--mainFontFamily);
+  padding: 0px;
+  margin: 0px;
+}

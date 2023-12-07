@@ -1,0 +1,227 @@
+.popupSectionTitle {
+  font-size: var(--r20);
+  width: max-content;
+  height: max-content;
+  max-height: max-content;
+  line-height: var(--r20);
+  color: var(--black);
+  width: max(190px, 190px);
+  position: relative;
+}
+.popupDifficultyButton {
+  font-size: var(--r14);
+  line-height: var(--r14);
+  width: max(100%, 100%);
+  height: max-content;
+  max-height: max-content;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  background-color: white;
+  box-shadow: 0px 0px 12.5px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+
+.difficultyButtonBlackIcon {
+  display: inline-block;
+}
+
+.difficultyButtonWhiteIcon {
+  display: none;
+}
+
+.popupDifficultyButton:hover {
+  background-color: black;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+}
+.popupDifficultyButton:hover .difficultyButtonBlackIcon {
+  display: none;
+}
+.popupDifficultyButton:hover .difficultyButtonWhiteIcon {
+  display: inline-block;
+}
+.difficultyButtonIcon {
+  width: max(25px, 25px);
+  height: max(25px, 25px);
+  object-fit: contain;
+}
+.popupButtonText {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+.activeDifficultyButton {
+  background-color: black;
+  box-shadow: none;
+  color: white;
+  position: relative;
+}
+
+.activeDifficultyButton .difficultyButtonBlackIcon {
+  display: none;
+}
+.activeDifficultyButton .difficultyButtonWhiteIcon {
+  display: inline-block;
+}
+
+.popupNumberOfQuestions {
+  width: max(100%, 100%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.popupNumberOfQuestionsButton {
+  width: max(75px, 75px);
+  background-color: white;
+  font-family: var(--mainFontFamily);
+  color: black;
+  font-size: var(--r12);
+  line-height: var(--r12);
+  padding: 5px 20px;
+  height: max-content;
+  max-height: max-content;
+  box-shadow: 0px 0px 12.5px black;
+}
+.popupNumberOfQuestionsButton:hover {
+  background-color: black;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+}
+.popupNumberOfQuestionsButtonActive {
+  background-color: black;
+  box-shadow: none;
+  color: white;
+}
+.questionsTypesContainer {
+  width: max(100%, 100%);
+  height: max-content;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.popupQuestionTypeButton {
+  height: max-content;
+  max-height: max-content;
+  width: max(100%, 100%);
+  background-color: white;
+  font-family: var(--mainFontFamily);
+  color: black;
+  height: max-content;
+  max-height: max-content;
+  box-shadow: 0px 0px 12.5px black;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.popupQuestionTypeBlackIcon {
+  display: inline-block;
+}
+
+.popupQuestionTypeWhiteIcon {
+  display: none;
+}
+.popupQuestionTypeButton:hover {
+  background-color: black;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+}
+
+.popupQuestionTypeButton:hover .popupQuestionTypeBlackIcon {
+  display: none;
+}
+.popupQuestionTypeButton:hover .popupQuestionTypeWhiteIcon {
+  display: inline-block;
+}
+.popupQuestionTypeButton > p {
+  font-size: var(--r14);
+  line-height: var(--r14);
+  text-align: right;
+}
+.popupQuestionTypeButton > img {
+  width: max(20px, 20px);
+  height: max(20px, 20px);
+}
+.popupQuestionTypeButtonActive {
+  background-color: black;
+  box-shadow: none;
+  color: white;
+}
+
+.popupQuestionTypeButtonActive .popupQuestionTypeBlackIcon {
+  display: none;
+}
+
+.popupQuestionTypeButtonActive .popupQuestionTypeWhiteIcon {
+  display: inline-block;
+}
+
+.startButton {
+  width: max-content;
+  max-width: max-content;
+  height: max-content;
+  max-height: max-content;
+  padding: 20px 20px;
+  color: var(--inactiveButtonFontColor);
+  background-color: var(--inactiveButtonBackgroundColor);
+  font-size: var(--r22);
+  line-height: var(--r22);
+  box-shadow: 0px 0px 10px black;
+  transition: background-color 0.5s color 0.5s;
+  border-radius: 10px;
+}
+
+.startButton:hover {
+  background-color: black;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+}
+.activeStartButton {
+  color: black;
+  background-color: white;
+}
+@media (max-width: 400px) {
+  .popupSectionTitle {
+    font-size: var(--r18);
+    line-height: var(--r16);
+  }
+  .popupDifficultyButton {
+    font-size: var(--r12);
+    line-height: var(--r12);
+  }
+  .popupNumberOfQuestionsButton {
+    width: max(75px, 75px);
+    font-size: var(--r10);
+    line-height: var(--r10);
+  }
+  .popupQuestionTypeButton > p {
+    font-size: var(--r12);
+    line-height: var(--r12);
+  }
+  .popupQuestionTypeButton > img {
+    width: max(15px, 15px);
+    height: max(15px, 15px);
+  }
+  .startButton {
+    font-size: var(--r20);
+    line-height: var(--r20);
+  }
+}

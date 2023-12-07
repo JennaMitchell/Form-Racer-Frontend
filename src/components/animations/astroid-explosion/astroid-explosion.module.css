@@ -1,0 +1,40 @@
+.astroidExplosionMainContainer {
+  position: absolute;
+
+  width: max(180%, 180%);
+  height: max(400%, 400%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.astroidPhoto {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+  transition: opacity 0.25s;
+  opacity: 1;
+}
+.astroidImagePhasingOut {
+  opacity: 0;
+}
+.astroidImagePhasedOut {
+  visibility: hidden;
+}
+@media (max-width: 775px) {
+  .astroidExplosionMainContainer {
+    width: max(140%, 140%);
+    height: max(400%, 400%);
+  }
+}
+@media (max-width: 480px) {
+  .astroidExplosionMainContainer {
+    height: max(300%, 300%);
+  }
+}

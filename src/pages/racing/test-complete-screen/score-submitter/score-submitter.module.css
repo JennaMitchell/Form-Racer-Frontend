@@ -1,0 +1,100 @@
+.scoreSubmitterMainContainer {
+  display: flex;
+  width: max-content;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: relative;
+}
+.scoreSubmitterMainContainer > label {
+  width: max-content;
+  font-size: var(--r10);
+  line-height: var(--r10);
+  color: white;
+  background-color: transparent;
+
+  box-sizing: content-box;
+  position: absolute;
+  top: 0.5px;
+  left: 2px;
+  background-color: black;
+  padding: 2.5px 1.5px;
+  box-sizing: border-box;
+}
+.scoreSubmitterMainContainer > input {
+  width: max(3ch, 3ch);
+  font-size: var(--r22);
+  color: white;
+  background-color: transparent;
+  line-height: var(--r22);
+
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.scoreSubmitterMainContainer > button {
+  font-size: var(--r22);
+  line-height: var(--r22);
+  background-color: var(--main800);
+  color: black;
+  transition: all 0.15s;
+  box-shadow: 0px 0px 10px white;
+  padding: 20px;
+  border-radius: 5px;
+}
+.scoreSubmitterMainContainer > button:hover {
+  background-color: var(--main200);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .scoreSubmitterMainContainer > label {
+    font-size: var(--r10);
+    line-height: var(--r10);
+  }
+  .scoreSubmitterMainContainer > input {
+    font-size: var(--r18);
+  }
+  .scoreSubmitterMainContainer > button {
+    font-size: var(--r18);
+    line-height: var(--r18);
+  }
+  .scoreSubmitterMainContainer > button {
+    font-size: var(--r18);
+    line-height: var(--r18);
+    background-color: var(--main800);
+    color: black;
+    transition: all 0.15s;
+    box-shadow: 0px 0px 10px white;
+  }
+}
+
+@media (max-width: 422px) {
+  .scoreSubmitterMainContainer > label {
+    font-size: var(--r6);
+    line-height: var(--r6);
+    top: -5px;
+  }
+  .scoreSubmitterMainContainer > input {
+    font-size: var(--r12);
+    padding: 5px 20px;
+  }
+  .scoreSubmitterMainContainer > button {
+    font-size: var(--r12);
+    line-height: var(--r12);
+  }
+  .scoreSubmitterMainContainer > button {
+    font-size: var(--r12);
+    line-height: var(--r12);
+    background-color: var(--main800);
+    color: black;
+    transition: all 0.15s;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 2.5px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,79 @@
+.testTimerContainer {
+  width: max(220px, 220px);
+  padding: 20px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+  transition: border 1s, color 1s;
+}
+.testTimerTime {
+  font-size: var(--r22);
+  line-height: var(--r22);
+  color: inherit;
+  font-family: var(--mainFamilyFont);
+  position: relative;
+}
+.testTimerLabel {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: var(--r12);
+  line-height: var(--r12);
+  color: inherit;
+  width: max-content;
+  max-width: max-content;
+  max-height: max-content;
+  padding: 2.5px 10px;
+  background-color: black;
+}
+@media (max-width: 950px) {
+  .testTimerContainer {
+    width: max(150px, 150px);
+    padding: 10px;
+  }
+  .testTimerTime {
+    font-size: var(--r16);
+    line-height: var(--r22);
+    color: inherit;
+    font-family: var(--mainFamilyFont);
+  }
+  .testTimerLabel {
+    font-size: var(--r8);
+    line-height: var(--r8);
+  }
+}
+@media (max-width: 650px) {
+  .testTimerContainer {
+    width: max(100px, 100px);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .testTimerTime {
+    font-size: var(--r12);
+    line-height: var(--r16);
+    color: inherit;
+    font-family: var(--mainFamilyFont);
+  }
+  .testTimerLabel {
+    font-size: var(--r6);
+    line-height: var(--r6);
+    padding: 0px 2.5px;
+  }
+}
+@media (max-width: 480px) {
+  .questionTimerTopContainer {
+    width: max(80px, 80x);
+    padding: 10px;
+    border-radius: 2.5px;
+  }
+  .questionTime {
+    font-size: var(--r10);
+    line-height: var(--r12);
+  }
+  .questionTimerLabel {
+    font-size: var(--r6);
+    line-height: var(--r6);
+  }
+}

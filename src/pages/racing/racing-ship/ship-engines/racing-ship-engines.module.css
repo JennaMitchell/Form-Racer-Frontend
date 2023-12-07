@@ -1,0 +1,6 @@
+.racerFlame {
+  position: absolute;
+  transition: all 0.2s;
+  height: max-content;
+  max-height: max-content;
+}

@@ -1,0 +1,24 @@
+.astroidImageContainer {
+  width: max(180%, 180%);
+  height: max(400%, 400%);
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.astroidImage {
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+}
+@media (max-width: 775px) {
+  .astroidImageContainer {
+    width: max(140%, 140%);
+    height: max(400%, 400%);
+  }
+}
+@media (max-width: 480px) {
+  .astroidImageContainer {
+    height: max(300%, 300%);
+  }
+}

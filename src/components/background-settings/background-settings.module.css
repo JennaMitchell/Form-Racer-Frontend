@@ -1,0 +1,68 @@
+.backgroundDropdownMenuTopContainer {
+  width: max-content;
+  max-width: max-content;
+  max-height: max-content;
+  position: relative;
+  padding: 0px;
+}
+
+.backgroundDropdownMenuButton {
+  width: max-content;
+  max-width: max-content;
+  background-color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  border-radius: 5px;
+  padding: 0px;
+  box-shadow: 0px 0px 10px white;
+}
+
+.backgroundStopButton,
+.backgroundStartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: max-content;
+  max-width: max-content;
+  max-height: max-content;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.backgroundStopButton {
+  background-color: red;
+  box-shadow: 0px 0px 10px red;
+}
+.backgroundStartButton {
+  background-color: green;
+  box-shadow: 0px 0px 10px green;
+}
+.backgroundStopIcon {
+  color: inherit;
+  width: max(25px, 25px);
+  height: max(25px, 25px);
+  background-color: transparent;
+}
+.stopButtonText {
+  color: inherit;
+  font-size: var(--r12);
+  line-height: var(--r12);
+}
+.backgroundStopButton:hover {
+  background-color: var(--main200);
+  color: grey;
+}
+.contentContainer {
+  width: max-content;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: transparent;
+  bottom: calc(-100% - 60px);
+  left: -20px;
+}

@@ -1,0 +1,53 @@
+.multipleChoiceAnswerContainer {
+  width: max(100%, 100%);
+  max-height: max-content;
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  grid-template-rows: max-content;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: inherit;
+  border: 4px solid transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: var(--r12);
+  color: inherit;
+}
+.multipleChoiceAnswerContainer:hover {
+  cursor: pointer;
+  border: 4px solid var(--main800);
+}
+.multipleChoiceRadioButton {
+  width: max(15px, 15px);
+  height: max(15px, 15px);
+  background-color: var(--white);
+  border-radius: 2.5px;
+}
+.multipleChoiceAnswerText {
+  width: max(100%, 100%);
+  max-height: max-content;
+  color: var(--white);
+  font-size: var(--r10);
+  text-align: left;
+}
+.activeMultipleChoiceAnswerContainer {
+  border: 4px solid var(--main800);
+}
+
+.questionText {
+  font-size: var(--r12);
+  color: inherit;
+}
+.multipleChoiceRadioButtonLabel {
+  font-size: var(--r10);
+  color: var(--white);
+}
+.checkMarkIcon {
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+  color: var(--black);
+}
+#questionId {
+  gap: 5px;
+}

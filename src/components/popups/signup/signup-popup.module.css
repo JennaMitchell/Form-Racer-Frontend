@@ -1,0 +1,15 @@
+.usernameInputLabel,
+.passwordInpuLabel {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  font-size: var(--r12);
+}
+.labelMovedOut {
+  font-size: var(--r10);
+  left: 5px;
+  top: -7.5px;
+  transform: translateY(0%);
+  background-color: var(--main800);
+}

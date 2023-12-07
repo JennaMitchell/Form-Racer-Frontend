@@ -1,0 +1,23 @@
+.shipMissileImage {
+  width: max(7.5px, 7.5px);
+  height: max(112.5px, 112.5px);
+  object-fit: fill;
+  background-color: transparent;
+  position: absolute;
+  z-index: -1;
+
+  top: 0px;
+  left: 53.25%;
+  transform: translate(-50%, -100%);
+  transition: top 0s;
+  visibility: hidden;
+}
+
+.fireShipMissle {
+  top: -100vh;
+  visibility: visible;
+  transition: top 3s;
+}
+.hideWeapons {
+  opacity: 0;
+}

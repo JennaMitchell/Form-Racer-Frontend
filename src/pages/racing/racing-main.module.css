@@ -1,0 +1,107 @@
+.racingMainBackdrop {
+  width: max(
+    calc(100vw - var(--scrollbar-width)),
+    calc(100vw - var(--scrollbar-width))
+  );
+  height: max(100vh, 100vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0px;
+  background-color: black;
+  background-size: contain;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.racingMainContainer {
+  width: max(100vw, 100vw);
+  height: max-content;
+  max-height: max-content;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 10;
+  gap: 20px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 0px;
+}
+.deleteThis {
+  position: fixed;
+  width: max(100%, 100);
+  top: 25px;
+  left: 25px;
+  z-index: 10000;
+  background-color: white;
+  color: black;
+}
+.homeWorldImage {
+  width: max(200px, 200px);
+  height: max(200px, 200px);
+  position: fixed;
+  top: -300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 5s, opacity 5s;
+  z-index: 3;
+}
+.homeWorldMoveIn {
+  top: 50%;
+}
+.homeWorldFadeOut {
+  opacity: 0;
+}
+.resetHomeWorld {
+  transition: all 0s;
+  top: -300px;
+}
+.startButton {
+  background-color: var(--main800);
+  color: var(--black);
+  position: absolute;
+  width: max-content;
+  max-width: max-content;
+  max-height: max-content;
+  padding: 10px 20px;
+  font-size: var(--r22);
+  border-radius: 5px;
+  transition: all 0.5s;
+  top: 200px;
+  right: 110px;
+  box-shadow: 0px 0px 10px white;
+}
+.startButton:hover {
+  background-color: var(--main200);
+  cursor: pointer;
+}
+.timersContainer {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: fixed;
+  left: 40px;
+  top: 40px;
+}
+@media (max-width: 950px) {
+  .timersContainer {
+    left: 40px;
+    top: 30px;
+    gap: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .timersContainer {
+    left: 20px;
+    top: 30px;
+    gap: 10px;
+  }
+}

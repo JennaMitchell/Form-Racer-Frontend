@@ -1,0 +1,46 @@
+.resetButton {
+  background-color: var(--main800);
+  color: var(--black);
+  position: fixed;
+  top: 40px;
+  right: 80px;
+  width: max-content;
+  max-width: max-content;
+  max-height: max-content;
+  padding: 10px 20px;
+
+  font-size: var(--r22);
+  border-radius: 5px;
+  transition: all 0.5s;
+  z-index: 12;
+}
+.resetButton:hover {
+  box-shadow: 0px 0px 10px white;
+  background-color: var(--main200);
+  cursor: pointer;
+}
+@media (max-width: 950px) {
+  .resetButton {
+    right: 40px;
+    padding: 10px 20px;
+
+    font-size: var(--r12);
+  }
+}
+@media (max-width: 650px) {
+  .resetButton {
+    right: 10px;
+    padding: 10px 20px;
+
+    font-size: var(--r10);
+  }
+}
+@media (max-width: 480px) {
+  .resetButton {
+    right: 10px;
+    padding: 10px;
+    top: 10px;
+
+    font-size: var(--r8);
+  }
+}

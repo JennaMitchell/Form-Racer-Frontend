@@ -1,0 +1,101 @@
+.questionColorWindow {
+  width: max(100%, 100%);
+  height: max(150px, 150px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--black);
+  padding: 10px;
+}
+.questionColorCircleOne,
+.questionColorCircleTwo {
+  width: max(100px, 100px);
+  height: max(100px, 100px);
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rgb(0, 8, 0);
+}
+
+.questionPlusIcon {
+  color: var(--white);
+  font-size: var(--r22);
+  line-height: var(--r22);
+  font-family: var(--mainFontFamilyß);
+  width: max-content;
+}
+
+.questionAnswersContainer {
+  width: max(100%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.colorInputContainer {
+  width: max(100%, 100%);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+
+.colorInput {
+  outline: none;
+  border: none;
+
+  border-radius: 5px;
+}
+.colorInput:hover {
+  cursor: pointer;
+}
+.colorInput:focus {
+  outline: 2px solid var(--main800);
+}
+.colorInputContainerActive {
+  outline: 2px solid var(--main800);
+}
+@media (max-width: 950px) {
+  .questionColorWindow {
+    height: max(120px, 120px);
+  }
+  .questionColorCircleOne,
+  .questionColorCircleTwo {
+    width: max(100px, 100px);
+    height: max(100px, 100px);
+  }
+  .questionPlusIcon {
+    font-size: var(--r20);
+    line-height: var(--r20);
+  }
+}
+@media (max-width: 680px) {
+  .questionColorWindow {
+    height: max(100px, 100px);
+  }
+  .questionColorCircleOne,
+  .questionColorCircleTwo {
+    width: max(80px, 80px);
+    height: max(80px, 80px);
+  }
+  .questionPlusIcon {
+    font-size: var(--r18);
+    line-height: var(--r18);
+  }
+}
+@media (max-width: 480px) {
+  .questionColorWindow {
+    height: max(80px, 80px);
+  }
+  .questionColorCircleOne,
+  .questionColorCircleTwo {
+    width: max(60px, 60px);
+    height: max(60px, 60px);
+  }
+  .questionPlusIcon {
+    font-size: var(--r16);
+    line-height: var(--r16);
+  }
+}

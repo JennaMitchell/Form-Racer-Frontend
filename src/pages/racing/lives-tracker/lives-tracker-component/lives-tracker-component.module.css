@@ -1,0 +1,67 @@
+.livesTrackerContainer {
+  width: max-content;
+  max-width: max-content;
+  position: relative;
+  border: 1px solid white;
+  display: flex;
+  gap: 10px;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.livesLabel {
+  background-color: black;
+  color: white;
+  position: absolute;
+  width: max-content;
+  font-size: var(--r12);
+  line-height: var(--r12);
+  padding: 2.5px 5px;
+  top: 0px;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.heartImage {
+  width: max(40px, 40px);
+  height: max(40px, 40px);
+  object-fit: cover;
+}
+.lifesContainerFlash {
+  animation: flashContainer 1s;
+  animation-iteration-count: 3;
+}
+
+@keyframes flashContainer {
+  0% {
+    box-shadow: 0px 0px 50px transparent;
+  }
+  100% {
+    box-shadow: 0px 0px 50px red;
+  }
+}
+@media (max-width: 950px) {
+  .heartImage {
+    width: max(25px, 25px);
+    height: max(25px, 25px);
+    object-fit: cover;
+  }
+  .livesLabel {
+    font-size: var(--r8);
+    line-height: var(--r8);
+  }
+}
+@media (max-width: 650px) {
+  .livesTrackerContainer {
+    border-radius: 5px;
+    padding: 10px 10px;
+  }
+  .heartImage {
+    width: max(15px, 15px);
+    height: max(15px, 15px);
+    object-fit: cover;
+  }
+  .livesLabel {
+    font-size: var(--r6);
+    line-height: var(--r6);
+    padding: 0px 2.5px;
+  }
+}

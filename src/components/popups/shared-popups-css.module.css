@@ -1,0 +1,156 @@
+.backdrop {
+  width: max(100vw, 100vw);
+  height: max(100vh, 100vh);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: var(--popupBackdropZIndex);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.popupMainContainer {
+  width: max-content;
+  max-width: max-content;
+  max-height: max-content;
+  padding: 30px;
+
+  background-color: var(--main800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px white;
+  box-sizing: border-box;
+}
+.popupTitle {
+  font-size: var(--r32);
+  color: var(--black);
+  text-align: center;
+}
+.popupInputContainer {
+  width: max-content;
+  max-width: max-content;
+  height: max-content;
+  max-height: max-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.inputLabel {
+  max-width: max-content;
+  max-height: max-content;
+  box-sizing: border-box;
+  padding: 1px 2.5px;
+
+  color: var(--black);
+  position: absolute;
+
+  transition: all 0.5s;
+}
+.popupInput {
+  width: max(200px, 200px);
+  height: max-content;
+  max-height: max-content;
+  font-size: var(--r16);
+
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+.popupInput:focus {
+  outline: solid;
+  outline-color: var(--main100);
+}
+.popupSubmitButton,
+.popupSubmitButtonDisabled {
+  width: max-content;
+  max-width: max-content;
+  padding: 10px 20px;
+  font-size: var(--r22);
+  line-height: var(--r22);
+  border-radius: 5px;
+  text-align: center;
+}
+.popupSubmitButton {
+  background-color: var(--black);
+  color: var(--main800);
+  transition: background-color 0.5s, color 0.5s;
+}
+.popupSubmitButtonDisabled {
+  background-color: darkgrey;
+  color: grey;
+}
+.popupSubmitButton:hover {
+  background-color: var(--main100);
+  color: var(--black);
+}
+
+.closingPopupButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  box-sizing: border-box;
+  padding: 6.5px 5px 5px 6.5px;
+  border-radius: 50%;
+  background-color: var(--black);
+  color: var(--main200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  max-width: max-content;
+  max-height: max-content;
+  font-size: var(--r12);
+  line-height: var(--r12);
+  transition: all 0.5s;
+  box-sizing: border-box;
+}
+
+.closingPopupButton:hover {
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.closingPopupButtonIcon {
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+}
+.inputErrorMessage {
+  width: max(200px, 200px);
+  font-size: var(--r10);
+  color: red;
+  font-family: var(--mainFamilyFont);
+}
+@media (max-height: 840px) {
+  .popupMainContainer {
+    height: max(80vh, 80vh);
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media (max-height: 400px) {
+  .popupMainContainer {
+    height: max(80vh, 80vh);
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+  }
+}

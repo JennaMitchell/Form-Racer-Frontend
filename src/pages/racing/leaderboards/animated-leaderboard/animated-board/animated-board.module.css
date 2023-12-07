@@ -1,0 +1,103 @@
+.animatedLeaderboardContainer {
+  height: max(300px, 300px);
+  width: max-content;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 5px;
+  gap: 0px;
+}
+.newLeaderBoardContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: max(100%, 100%);
+  height: max-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.newLeaderboardEntry {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.seperatingLeaderboard {
+  width: 100%;
+  max-width: 100%;
+  height: max-content;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box;
+
+  transition: top 1.5s;
+
+  position: relative;
+}
+
+.leaderboardRowEntry {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr max-content max-content;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.higherLeaderboard {
+  grid-row: 1 / span 1;
+}
+.lowerLeaderboard {
+  grid-row: 2 / span 1;
+}
+
+.leaderboardRowEntry > p {
+  font-size: var(--r22);
+  line-height: var(--r22);
+
+  width: max-content;
+  max-width: max-content;
+  text-align: center;
+
+  color: white;
+  font-weight: bold;
+}
+.hideLeaderboardRowEntry {
+  opacity: 0;
+}
+
+.hideOldLeaderboard {
+  opacity: 0;
+}
+.moveDown {
+  margin-top: 25px;
+}
+.showEntry {
+  opacity: 1;
+}
+.userEntry > p {
+  color: var(--main800);
+  animation: userEntryFlash 0.75s infinite;
+}
+@keyframes userEntryFlash {
+  0% {
+    color: var(--main800);
+  }
+  100% {
+    color: var(--main300);
+  }
+}

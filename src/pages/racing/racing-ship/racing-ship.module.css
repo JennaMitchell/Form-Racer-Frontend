@@ -1,0 +1,51 @@
+.shipContainer {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  width: max(100px, 100px);
+  height: max(100px, 100px);
+  display: relative;
+  transition: left 1s ease-out;
+  transform: translateX(-50%);
+  z-index: 3;
+  animation: none;
+}
+.racerBody {
+  width: max(60%, 60%);
+  height: max(50%, 50%);
+}
+
+.shipMoveRight {
+  left: calc(50% + 10px);
+}
+.shipMoveLeft {
+  left: calc(50% - 10px);
+}
+.returnShipHome {
+  animation: returnHome 2500ms;
+}
+.hideShip {
+  display: none;
+}
+.resetShip {
+  animation: none;
+  display: none;
+  left: 50%;
+  bottom: 20px;
+  transition: 0s;
+}
+@keyframes returnHome {
+  0% {
+    left: 50%;
+    bottom: 20px;
+  }
+
+  50% {
+    bottom: 45%;
+  }
+
+  100% {
+    scale: 0;
+    bottom: 45%;
+  }
+}

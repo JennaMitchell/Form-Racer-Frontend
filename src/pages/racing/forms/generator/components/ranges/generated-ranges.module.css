@@ -1,0 +1,52 @@
+.questionText {
+  width: max(100%, 100%);
+  font-family: var(--mainFamilyFont);
+  font-size: var(--r12);
+  line-height: var(--r16);
+  color: var(--white);
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.rangeInputContainer {
+  width: max(100%, 100%);
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rangeInput {
+  width: max(100%, 100%);
+  height: max(10px, 10px);
+  background-image: linear-gradient(90deg, var(--main100), var(--main1000));
+}
+
+.rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 20px;
+  border: 0;
+  cursor: pointer;
+  background-color: grey;
+}
+
+.rangeInput::-moz-range-thumb {
+  width: 10px;
+  height: 20px;
+  border: 0;
+  cursor: pointer;
+  background-color: grey;
+}
+.rangInputValue {
+  font-family: var(--mainFamilyFont);
+  font-size: var(--r12);
+  line-height: var(--r12);
+  width: max-content;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 2.5px;
+  background-color: var(--white);
+  color: var(--black);
+}

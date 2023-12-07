@@ -4,15 +4,15 @@ import {
   useAppDispatch,
   useAppSelector,
 } from "../../../../store/typescript-hooks";
-import { getLeaderboardData } from "../../../../assets/sql-api-calls/form-api-calls";
+import { getLeaderboardData } from "../../../../utilities/sql-api-calls/form-api-calls";
 import { popupsStoreActions } from "../../../../store/popups-store";
 import {
   acceptedNumberOfQuestionsValues,
   acceptedDifficultyLevels,
 } from "../../../../assets/constants/constants";
-import { LeaderboardRetrievedDataType } from "../../../../assets/sql-api-calls/form-api-calls";
+import { LeaderboardRetrievedDataType } from "../../../../utilities/sql-api-calls/form-api-calls";
 
-import { capitalizeFirstLetter } from "../../../../assets/general-functions/general-functions";
+import { capitalizeFirstLetter } from "../../../../utilities/general-functions/general-functions";
 const StaticLeaderboard = (): JSX.Element => {
   const gameSettings = useAppSelector((state) => state.userInfo.gameSettings);
   const [retrievedLeaderBoardData, setRetrievedLeaderBoardData] = useState<

@@ -13,13 +13,13 @@ import {
   acceptedNumberOfQuestionsValues,
   acceptedDifficultyLevels,
 } from "../../../../assets/constants/constants";
-import { LeaderboardRetrievedDataType } from "../../../../assets/sql-api-calls/form-api-calls";
+import { LeaderboardRetrievedDataType } from "../../../../utilities/sql-api-calls/form-api-calls";
 
 import {
   capitalizeFirstLetter,
   convertSQLTimeIntoSeconds,
   secondsIntoHoursMinutesAndSecondsConverter,
-} from "../../../../assets/general-functions/general-functions";
+} from "../../../../utilities/general-functions/general-functions";
 
 import AnimatedBoard from "./animated-board/animated-board";
 

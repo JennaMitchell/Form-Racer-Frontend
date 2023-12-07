@@ -11,7 +11,6 @@ type MultipleChoiceQuestionDatabaseType = {
 export const multipleChoiceDataRefactorer = (
   retrievedData: MultipleChoiceQuestionDatabaseType[]
 ) => {
-  console.log(retrievedData);
   return retrievedData.map((dataEntry, index) => {
     return {
       possibleAnswers: [

@@ -1,5 +1,5 @@
 import { useAppDispatch } from "../../../store/typescript-hooks";
-import { testResetFunction } from "../../../assets/test-functions/test-function";
+import { testResetFunction } from "../../../utilities/test-functions/test-function";
 import classes from "./game-over-screen.module.css";
 const GameOverScreen = (): JSX.Element => {
   const dispatch = useAppDispatch();

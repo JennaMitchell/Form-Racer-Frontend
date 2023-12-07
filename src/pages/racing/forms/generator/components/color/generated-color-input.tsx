@@ -8,7 +8,7 @@ import { formStoreActions } from "../../../../../../store/form-store";
 import { decreaseLivesTracker } from "../../../../lives-tracker/lives-tracker-functions";
 import { updateActiveQuestionNumber } from "../shared-components-functions";
 import AstroidExplosion from "../../../../../../components/animations/astroid-explosion/astroid-explosion";
-import { hexColorToArrayConverter } from "../../../../../../assets/sql-api-calls/sql-data-refactors/color-data-refactor";
+import { hexColorToArrayConverter } from "../../../../../../utilities/data-refactors/color-data-refactor";
 import { updateUserAnswers } from "../shared-components-functions";
 import AstroidImage from "../astroid-image/astroid-image";
 import {

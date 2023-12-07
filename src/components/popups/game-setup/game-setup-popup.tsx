@@ -25,7 +25,7 @@ import WhiteTextInputsIcon from "../../../assets/images/icons/setup-popup/white-
 import WhiteMultipleChoiceIcon from "../../../assets/images/icons/setup-popup/white-icons/white-multiple-choice-icon.png";
 
 import { useState, MouseEvent, useMemo, useCallback, useEffect } from "react";
-import { testResetFunction } from "../../../assets/test-functions/test-function";
+import { testResetFunction } from "../../../utilities/test-functions/test-function";
 import { formStoreActions } from "../../../store/form-store";
 import { userInfoStoreActions } from "../../../store/user-info-store";
 const GameSetupPopup = (): JSX.Element => {

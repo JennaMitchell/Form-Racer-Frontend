@@ -1,5 +1,5 @@
 import classes from "./animated-board.module.css";
-import { LeaderboardRetrievedDataType } from "../../../../../assets/sql-api-calls/form-api-calls";
+import { LeaderboardRetrievedDataType } from "../../../../../utilities/sql-api-calls/form-api-calls";
 import { useEffect, useState, useRef, useMemo, useCallback } from "react";
 import {
   useAppDispatch,

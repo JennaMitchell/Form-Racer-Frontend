@@ -11,14 +11,14 @@ import {
 
 import { formStoreActions } from "../../../../store/form-store";
 
-import { inputDataRefactor } from "../../../../assets/sql-api-calls/sql-data-refactors/input-data-refactor";
-import { multipleChoiceDataRefactorer } from "../../../../assets/sql-api-calls/sql-data-refactors/multiple-choice-data-refactor";
+import { inputDataRefactor } from "../../../../utilities/data-refactors/input-data-refactor";
+import { multipleChoiceDataRefactorer } from "../../../../utilities/data-refactors/multiple-choice-data-refactor";
 import { getMongoDBQuestionDataWithLimit } from "../../../../utilities/mongo-db-requests/questions/questions-api-functions";
-import { dateDataRefactorer } from "../../../../assets/sql-api-calls/sql-data-refactors/date-data-refactorer";
-import { colorDataRefactor } from "../../../../assets/sql-api-calls/sql-data-refactors/color-data-refactor";
-import { checkboxDataRefactor } from "../../../../assets/sql-api-calls/sql-data-refactors/checkbox-data-refactor";
+import { dateDataRefactorer } from "../../../../utilities/data-refactors/date-data-refactorer";
+import { colorDataRefactor } from "../../../../utilities/data-refactors/color-data-refactor";
+import { checkboxDataRefactor } from "../../../../utilities/data-refactors/checkbox-data-refactor";
 import { randomNumberGeneratorWithNumberOfQuestionRemaining } from "../../../../components/random-number-generator/random-number-generator";
-import { sliderDataRefactorer } from "../../../../assets/sql-api-calls/sql-data-refactors/slider-data-refactorer";
+import { sliderDataRefactorer } from "../../../../utilities/data-refactors/slider-data-refactorer";
 import { useEffect } from "react";
 import { updateActiveQuestionNumber } from "./components/shared-components-functions";
 import { acceptedMongoDBAPICallObject } from "../../../../assets/constants/constants";

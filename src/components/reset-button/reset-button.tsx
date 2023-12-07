@@ -1,5 +1,5 @@
 import classes from "./reset-button.module.css";
-import { testResetFunction } from "../../assets/test-functions/test-function";
+import { testResetFunction } from "../../utilities/test-functions/test-function";
 import { useAppDispatch } from "../../store/typescript-hooks";
 const ResetButton = (): JSX.Element => {
   const dispatch = useAppDispatch();

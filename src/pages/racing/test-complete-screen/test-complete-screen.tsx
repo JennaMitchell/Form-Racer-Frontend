@@ -8,7 +8,7 @@ import {
 import { formStoreActions } from "../../../store/form-store";
 import ScoreSubmitter from "./score-submitter/score-submitter";
 import AnimatedLeaderboard from "../leaderboards/animated-leaderboard/animated-leaderboard";
-import { testResetFunction } from "../../../assets/test-functions/test-function";
+import { testResetFunction } from "../../../utilities/test-functions/test-function";
 const TestCompleteScreen = (): JSX.Element => {
   const username = useAppSelector((state) => state.userInfo.username);
   const testCompletionTime = useAppSelector(

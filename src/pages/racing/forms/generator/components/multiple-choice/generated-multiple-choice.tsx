@@ -86,8 +86,14 @@ const GeneratedMultipleChoice = ({
 
   // useEffect below is used to initalize the astroid to move on the first render
   useEffect(() => {
-    setTriggerAnimation(true);
-    dispatch(formStoreActions.setStartQuestionTimer(true));
+    setTimeout(
+      () => {
+        setTriggerAnimation(true);
+        dispatch(formStoreActions.setStartQuestionTimer(true));
+      },
+
+      100
+    );
   }, [dispatch]);
 
   // useEffect used to trigger the astroid to move

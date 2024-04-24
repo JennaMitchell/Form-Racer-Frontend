@@ -180,25 +180,6 @@ const GeneratedMultipleChoice = ({
 
   // useEffect below is used to initalize the astroid to move on the first render
   useEffect(() => {
-    const topContainerCurrent = topContainerRef.current;
-
-    if (topContainerCurrent) {
-      const notNullCurrentRef = topContainerCurrent;
-      // moving next question to the top of the viewport and transition none so its instantaneous
-      notNullCurrentRef.style.top = "0px";
-      notNullCurrentRef.style.transition = `none`;
-    }
-    setTimeout(
-      () => {
-        setTriggerAnimation(true);
-        dispatch(formStoreActions.setStartQuestionTimer(true));
-      },
-
-      100
-    );
-  }, [dispatch, questionTimerHandler]);
-  // useEffect below is used to initalize the astroid to move on the first render
-  useEffect(() => {
     setTimeout(
       () => {
         setTriggerAnimation(true);

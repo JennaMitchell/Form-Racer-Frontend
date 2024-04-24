@@ -118,7 +118,7 @@ const GeneratedMultipleChoice = ({
 
   useEffect(() => {
     if (astroidDestroyed) {
-      const updateTimeout = setTimeout(() => {
+      setTimeout(() => {
         updateActiveQuestionNumber(
           dispatch,
           questionNumber,
@@ -126,12 +126,10 @@ const GeneratedMultipleChoice = ({
         );
         dispatch(formStoreActions.setAstroidDestroyed(false));
       }, 5000);
-
-      return () => {
-        clearTimeout(updateTimeout);
-      };
     }
   }, [astroidDestroyed, dispatch, questionNumber, totalNumberOfQuestions]);
+
+  // reset astroid position when active question number is updated
 
   useEffect(() => {
     if (activeQuestionNumberUpdated) {
@@ -149,17 +147,21 @@ const GeneratedMultipleChoice = ({
     }
   }, [dispatch, activeQuestionNumberUpdated]);
 
-  // handeling test resting
-
   useEffect(() => {
-    if (testResetTriggered) {
+    if (activeQuestionNumberUpdated) {
       const topContainerCurrent = topContainerRef.current;
       if (topContainerCurrent) {
         const notNullCurrentRef = topContainerCurrent;
+        // moving next question to the top of the viewport and transition none so its instantaneous
         notNullCurrentRef.style.top = "0px";
+        notNullCurrentRef.style.transition = `none`;
       }
+
+      setResetIntermVar(true);
+
+      dispatch(formStoreActions.setActiveQuestionNumberUpdated(false));
     }
-  }, [testResetTriggered]);
+  }, [dispatch, activeQuestionNumberUpdated]);
 
   useEffect(() => {
     if (resetIntermVar && !resetTimeoutTriggered) {
@@ -178,44 +180,16 @@ const GeneratedMultipleChoice = ({
     }
   }, [resetIntermVar, resetTimeoutTriggered]);
 
-  // useEffect below is used to initalize the astroid to move on the first render
   useEffect(() => {
-    const topContainerCurrent = topContainerRef.current;
-
-    if (topContainerCurrent) {
-      const notNullCurrentRef = topContainerCurrent;
-      // moving next question to the top of the viewport and transition none so its instantaneous
-      notNullCurrentRef.style.top = "0px";
-      notNullCurrentRef.style.transition = `none`;
+    if (testResetTriggered) {
+      const topContainerCurrent = topContainerRef.current;
+      if (topContainerCurrent) {
+        const notNullCurrentRef = topContainerCurrent;
+        notNullCurrentRef.style.top = "0px";
+      }
     }
-    setTimeout(
-      () => {
-        setTriggerAnimation(true);
-        dispatch(formStoreActions.setStartQuestionTimer(true));
-      },
+  }, [testResetTriggered]);
 
-      100
-    );
-  }, [dispatch, questionTimerHandler]);
-  // useEffect below is used to initalize the astroid to move on the first render
-  useEffect(() => {
-    setTimeout(
-      () => {
-        setTriggerAnimation(true);
-        dispatch(formStoreActions.setStartQuestionTimer(true));
-      },
-
-      100
-    );
-  }, [dispatch]);
-
-  // useEffect used to trigger the astroid to move
-  useEffect(() => {
-    if (triggerAnimation) {
-      setTriggerAnimation(false);
-      questionTimerHandler();
-    }
-  }, [triggerAnimation, questionTimerHandler]);
   const radioButtonClickHandler = (e: MouseEvent<HTMLElement>) => {
     let targetElement = e.target as HTMLElement;
     let targetId = targetElement.id;

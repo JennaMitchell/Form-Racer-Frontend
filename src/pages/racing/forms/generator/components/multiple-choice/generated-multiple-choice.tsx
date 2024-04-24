@@ -79,7 +79,7 @@ const GeneratedMultipleChoice = ({
       const topContainerDivElement = topContainerRefCurrent;
 
       topContainerDivElement.style.transition = `all ${timePerQuestionInSeconds}s ease-in`;
-      topContainerDivElement.style.top = `0px`;
+      topContainerDivElement.style.top = `calc(100vh - 450px)`;
     }
     dispatch(formStoreActions.setStartQuestionTimer(true));
   }, [timePerQuestionInSeconds, dispatch]);
